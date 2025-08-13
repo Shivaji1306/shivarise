@@ -1,0 +1,145 @@
+<!--  -->
+<!--  -->
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:300,400,500,600,700&family=Playfair+Display:300,400,500,600,700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Wild Bean Coffee</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { 'coffee-700': '#4b2e2a', 'accent': '#DAB68A' },
+          fontFamily: { sans: ['Poppins', 'ui-sans-serif', 'system-ui'], display: ['Playfair Display', 'serif'] }
+        }
+      }
+    }
+  </script>
+</head>
+<body style="font-family: 'Poppins', sans-serif;" class="w-full max-w-none bg-gray-50 text-gray-800" style="font-family:'Poppins', sans-serif;">
+  <!-- header -->
+  <header class="w-full bg-white shadow-sm">
+    <div class="w-full flex items-center justify-between px-6 py-4">
+      <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-coffee-700 flex items-center justify-center text-white text-lg font-bold">W</div>
+        <div class="leading-tight">
+          <div class="text-sm font-semibold text-coffee-700">Wild Bean</div>
+          <div class="text-xs text-gray-500 -mt-0.5">Coffee & Roastery</div>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="hover:text-coffee-500">Home</a>
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" class="text-coffee-700">About</a>
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="hover:text-coffee-500">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="w-full max-w-none">
+    <!-- hero -->
+    <section class="w-full px-6 md:px-24 py-8 bg-white">
+      <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+        <div>
+          <h1 class="text-3xl md:text-4xl font-display text-coffee-700">Our Story</h1>
+          <p class="mt-4 text-sm text-gray-700">At Wild Bean we started with a simple idea: roast delicious coffee and share it with our neighborhood. Founded in 2017, we roast small batches weekly and partner with farmers to source direct-trade beans.</p>
+          <p class="mt-3 text-sm text-gray-700">We believe in transparency, sustainable sourcing, and creating a welcoming space for everyone—whether you need a morning pick-me-up or a place to focus for a few hours.</p>
+        </div>
+        <div>
+          <img src="https://pixabay.com/get/g604a4ffc1bfdaecf68c6b660a1edfe21f0b1dc14a855e99a7fc98c8bd416023b5a16fa25d8f94c8a7fb8fd2747b370273a18cbf0659d511617169f4c1e38a9d8_640.jpg" alt="Roastery" class="w-full h-64 object-cover rounded-xl shadow-sm" />
+        </div>
+      </div>
+    </section>
+
+    <!-- mission timeline -->
+    <section class="w-full px-6 md:px-24 py-10">
+      <h2 class="text-2xl font-display text-coffee-700">Mission & Timeline</h2>
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition">
+          <h3 class="font-semibold">2017 — Humble Beginnings</h3>
+          <p class="text-sm text-gray-600 mt-2">Opened our first shop in a renovated bakery. First roast — 30 kg.</p>
+        </div>
+        <div class="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition">
+          <h3 class="font-semibold">2019 — Roastery</h3>
+          <p class="text-sm text-gray-600 mt-2">Moved production to a small roastery; began offering wholesale to local cafes.</p>
+        </div>
+        <div class="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition">
+          <h3 class="font-semibold">2022 — Community Focus</h3>
+          <p class="text-sm text-gray-600 mt-2">Launched community events: brew workshops, coffee tastings, and open mic nights.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- team -->
+    <section class="w-full px-6 md:px-24 py-10 bg-white">
+      <h2 class="text-2xl font-display text-coffee-700">Meet the Team</h2>
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="p-4 rounded-xl shadow-sm flex gap-4 items-center hover:shadow-md transition">
+          <img src="https://pixabay.com/get/ga777bc7ad0431082bd353d9f386619923d87b4d661d4b279ddc93d44feb1a93f84d89d12339831ad965e3f811089dce74d458082544e915fce3e64f4f1d3c23d_640.jpg" alt="Barista" class="w-20 h-20 object-cover rounded-full" />
+          <div>
+            <h4 class="font-semibold">Ava</h4>
+            <p class="text-xs text-gray-500">Head Barista — Latte art champion</p>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-xl shadow-sm flex gap-4 items-center hover:shadow-md transition">
+          <img src="https://pixabay.com/get/ged228b04d96a9522c2941dd96d20a679fc29c5f6ff7d68c87a619cca51cb9e8e378ccdfec56271f3ef0932773d50ca4cf4782ab7135213626ecec360c65b45ce_640.jpg" alt="Roaster" class="w-20 h-20 object-cover rounded-full" />
+          <div>
+            <h4 class="font-semibold">Marco</h4>
+            <p class="text-xs text-gray-500">Roaster & Sourcing</p>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-xl shadow-sm flex gap-4 items-center hover:shadow-md transition">
+          <img src="https://pixabay.com/get/g946bee97b0d9fd9053ae1d81e4300c36271af427fab04727be80ecc5496100ec687878c43eeb7c9a36dcb4072e8a5f2017ea42c59539a1561230bd42359f28cc_640.jpg" alt="Barista" class="w-20 h-20 object-cover rounded-full" />
+          <div>
+            <h4 class="font-semibold">Lina</h4>
+            <p class="text-xs text-gray-500">Community & Events</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- values -->
+    <section class="w-full px-6 md:px-24 py-10">
+      <h3 class="text-xl font-display text-coffee-700">Our Values</h3>
+      <div class="mt-4 w-full grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-6 bg-white rounded-xl shadow-sm">
+          <h4 class="font-semibold">Sustainability</h4>
+          <p class="text-sm text-gray-600 mt-2">We prioritize relationships with producers and reduce waste whenever possible.</p>
+        </div>
+        <div class="p-6 bg-white rounded-xl shadow-sm">
+          <h4 class="font-semibold">Quality</h4>
+          <p class="text-sm text-gray-600 mt-2">Every cup is brewed to highlight the bean's character.</p>
+        </div>
+        <div class="p-6 bg-white rounded-xl shadow-sm">
+          <h4 class="font-semibold">Community</h4>
+          <p class="text-sm text-gray-600 mt-2">We host events and support local initiatives to give back.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="w-full max-w-none bg-white border-t py-6 px-6 md:px-24">
+    <div class="flex flex-col md:flex-row items-start justify-between gap-4">
+      <div>
+        <h5 class="font-semibold">Wild Bean Coffee</h5>
+        <p class="text-sm text-gray-500">123 Roaster Lane — Your City</p>
+      </div>
+      <div class="text-sm">
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="block">Home</a>
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="block">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
