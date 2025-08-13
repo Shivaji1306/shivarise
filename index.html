@@ -1,0 +1,318 @@
+<!--  -->
+<!--  -->
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:300,400,500,600,700&family=Playfair+Display:300,400,500,600,700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wild Bean Coffee — Home</title>
+  <meta name="description" content="Wild Bean Coffee — Specialty coffee shop. Fresh roasted beans, pastries, and a cozy place to work and meet." />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Tailwind custom config for colors if needed (kept minimal)
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'coffee-700': '#4b2e2a',
+            'coffee-500': '#6b3f36',
+            'accent': '#DAB68A'
+          },
+          fontFamily: {
+            sans: ['Poppins', 'ui-sans-serif', 'system-ui'],
+            display: ['Playfair Display', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <meta name="author" content="Wild Bean Coffee">
+</head>
+<body style="font-family: 'Poppins', sans-serif;" class="w-full max-w-none bg-gray-50 text-gray-800" style="font-family: 'Poppins', sans-serif;">
+  <!-- NAV -->
+  <header class="w-full max-w-none bg-white shadow-sm sticky top-0 z-40">
+    <div class="w-full max-w-none flex items-center justify-between px-6 py-4">
+      <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-coffee-700 flex items-center justify-center text-white text-lg font-bold transform transition-transform duration-300 hover:scale-105">W</div>
+        <div class="leading-tight">
+          <div class="text-sm font-semibold text-coffee-700">Wild Bean</div>
+          <div class="text-xs text-gray-500 -mt-0.5">Coffee & Roastery</div>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="text-coffee-700 hover:text-coffee-500 transition">Home</a>
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" class="hover:text-coffee-500 transition">About</a>
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="hover:text-coffee-500 transition">Contact</a>
+        <a href="#menu" class="hover:text-coffee-500 transition">Menu</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <button id="cartBtn" aria-label="Open cart" class="relative inline-flex items-center gap-2 px-4 py-2 rounded-md bg-coffee-700 text-white hover:bg-coffee-500 transition shadow-md">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.2 6.2A1 1 0 007 21h10a1 1 0 00.98-.8L19 13M7 13H5.4"></path></svg>
+          <span class="text-sm">Order</span>
+          <span id="cartCount" class="ml-1 inline-block bg-accent text-coffee-700 rounded-full px-2 text-xs font-semibold">0</span>
+        </button>
+
+        <button id="mobileNavBtn" class="md:hidden p-2 rounded-md hover:bg-gray-100 transition">
+          <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- mobile nav -->
+    <div id="mobileNav" class="md:hidden hidden px-6 pb-4">
+      <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="block py-2 text-coffee-700">Home</a>
+      <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" class="block py-2">About</a>
+      <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="block py-2">Contact</a>
+      <a href="#menu" class="block py-2">Menu</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main class="w-full max-w-none">
+    <section class="w-full relative">
+      <img src="https://images.pexels.com/photos/10186626/pexels-photo-10186626.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Cozy coffee shop" class="w-full h-[60vh] object-cover brightness-75">
+      <div class="absolute inset-0 flex items-center justify-start px-6 md:px-24">
+        <div class="bg-white/70 backdrop-blur-sm rounded-xl p-6 md:p-10 shadow-lg max-w-none w-full md:w-2/3">
+          <h1 class="text-3xl md:text-5xl font-display text-coffee-700">Wild Bean Coffee</h1>
+          <p class="mt-2 text-sm md:text-base text-gray-700">Small-batch roasted beans. Thoughtful brewing. A cozy corner for your best ideas.</p>
+          <div class="mt-4 flex gap-3">
+            <a href="#menu" class="inline-block px-5 py-3 rounded-md bg-coffee-700 text-white shadow hover:bg-coffee-500 transform transition">See the Menu</a>
+            <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="inline-block px-5 py-3 rounded-md border border-coffee-700 text-coffee-700 hover:bg-coffee-50 transition">Visit Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="w-full max-w-none px-6 md:px-24 py-10">
+      <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-xl bg-white shadow-sm flex gap-4 items-start hover:shadow-md transition">
+          <div class="w-12 h-12 rounded-md bg-coffee-700 text-white flex items-center justify-center text-xl">☕</div>
+          <div>
+            <h3 class="font-semibold text-coffee-700">Specialty Beans</h3>
+            <p class="text-sm text-gray-600">Single-origin, seasonal roasts with tasting notes on every bag.</p>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-xl bg-white shadow-sm flex gap-4 items-start hover:shadow-md transition">
+          <div class="w-12 h-12 rounded-md bg-yellow-200 text-coffee-700 flex items-center justify-center text-xl">🍪</div>
+          <div>
+            <h3 class="font-semibold text-coffee-700">Fresh Pastries</h3>
+            <p class="text-sm text-gray-600">Daily-baked croissants, scones, and seasonal treats from local bakers.</p>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-xl bg-white shadow-sm flex gap-4 items-start hover:shadow-md transition">
+          <div class="w-12 h-12 rounded-md bg-emerald-100 text-emerald-800 flex items-center justify-center text-xl">🌿</div>
+          <div>
+            <h3 class="font-semibold text-coffee-700">Community Space</h3>
+            <p class="text-sm text-gray-600">Comfortable seating, reliable Wi-Fi, and a calm vibe for work and meetups.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="w-full max-w-none px-6 md:px-24 py-10">
+      <div class="flex items-center justify-between">
+        <h2 class="text-2xl font-display text-coffee-700">Menu Highlights</h2>
+        <div class="flex gap-2">
+          <button data-filter="all" class="filterBtn px-3 py-1 rounded-full bg-coffee-700 text-white text-sm">All</button>
+          <button data-filter="espresso" class="filterBtn px-3 py-1 rounded-full bg-gray-100 text-gray-700 text-sm hover:bg-gray-200">Espresso</button>
+          <button data-filter="coffee" class="filterBtn px-3 py-1 rounded-full bg-gray-100 text-gray-700 text-sm hover:bg-gray-200">Coffee</button>
+          <button data-filter="tea" class="filterBtn px-3 py-1 rounded-full bg-gray-100 text-gray-700 text-sm hover:bg-gray-200">Tea</button>
+          <button data-filter="pastry" class="filterBtn px-3 py-1 rounded-full bg-gray-100 text-gray-700 text-sm hover:bg-gray-200">Pastry</button>
+        </div>
+      </div>
+
+      <div id="menuGrid" class="mt-6 w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <!-- Menu items -->
+        <article class="menu-item bg-white rounded-xl shadow-sm p-4 flex flex-col hover:shadow-md transition" data-category="espresso">
+          <img src="https://pixabay.com/get/g99a9891c6b750d52cfe86a98e616f5441f30fe4ec1aee720209d10c5ac8cf6e889a6cfba9f6d5f87acb843133ed8940eb997eb79b447f6eadcc2240e3c303a78_640.jpg" alt="Espresso" class="w-full h-40 object-cover rounded-md mb-3">
+          <div class="flex items-start justify-between">
+            <div>
+              <h4 class="font-semibold text-coffee-700">Single Shot Espresso</h4>
+              <p class="text-xs text-gray-500">Classic, rich, and balanced.</p>
+            </div>
+            <div class="text-coffee-700 font-semibold">$2.50</div>
+          </div>
+          <div class="mt-3 flex items-center justify-between">
+            <button class="addBtn px-3 py-1 rounded-md bg-accent text-coffee-700 text-sm shadow hover:scale-105 transition" data-name="Single Shot Espresso" data-price="2.5">Add</button>
+            <div class="text-xs text-gray-500">30ml</div>
+          </div>
+        </article>
+
+        <article class="menu-item bg-white rounded-xl shadow-sm p-4 flex flex-col hover:shadow-md transition" data-category="coffee">
+          <img src="https://images.pexels.com/photos/8937268/pexels-photo-8937268.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Pour Over" class="w-full h-40 object-cover rounded-md mb-3">
+          <div class="flex items-start justify-between">
+            <div>
+              <h4 class="font-semibold text-coffee-700">Pour-Over</h4>
+              <p class="text-xs text-gray-500">Clean, bright, single-origin.</p>
+            </div>
+            <div class="text-coffee-700 font-semibold">$4.00</div>
+          </div>
+          <div class="mt-3 flex items-center justify-between">
+            <button class="addBtn px-3 py-1 rounded-md bg-accent text-coffee-700 text-sm shadow hover:scale-105 transition" data-name="Pour-Over" data-price="4">Add</button>
+            <div class="text-xs text-gray-500">12oz</div>
+          </div>
+        </article>
+
+        <article class="menu-item bg-white rounded-xl shadow-sm p-4 flex flex-col hover:shadow-md transition" data-category="coffee">
+          <img src="https://pixabay.com/get/g431340bb2170684c9717db96168dcac596ad8fd7ed7a5b54fbe96c3e2512d6f75ff929321fe71060e0875fae8eb36282283eed46a1db7e9165dbbbe6dc9bbae6_640.jpg" alt="Latte" class="w-full h-40 object-cover rounded-md mb-3">
+          <div class="flex items-start justify-between">
+            <div>
+              <h4 class="font-semibold text-coffee-700">Caffe Latte</h4>
+              <p class="text-xs text-gray-500">Smooth milk, silky texture.</p>
+            </div>
+            <div class="text-coffee-700 font-semibold">$4.50</div>
+          </div>
+          <div class="mt-3 flex items-center justify-between">
+            <button class="addBtn px-3 py-1 rounded-md bg-accent text-coffee-700 text-sm shadow hover:scale-105 transition" data-name="Caffe Latte" data-price="4.5">Add</button>
+            <div class="text-xs text-gray-500">12oz</div>
+          </div>
+        </article>
+
+        <article class="menu-item bg-white rounded-xl shadow-sm p-4 flex flex-col hover:shadow-md transition" data-category="tea">
+          <img src="https://images.pexels.com/photos/32955505/pexels-photo-32955505.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Green Tea" class="w-full h-40 object-cover rounded-md mb-3">
+          <div class="flex items-start justify-between">
+            <div>
+              <h4 class="font-semibold text-coffee-700">Sencha Green Tea</h4>
+              <p class="text-xs text-gray-500">Delicate and vegetal.</p>
+            </div>
+            <div class="text-coffee-700 font-semibold">$3.00</div>
+          </div>
+          <div class="mt-3 flex items-center justify-between">
+            <button class="addBtn px-3 py-1 rounded-md bg-accent text-coffee-700 text-sm shadow hover:scale-105 transition" data-name="Sencha Green Tea" data-price="3">Add</button>
+            <div class="text-xs text-gray-500">12oz</div>
+          </div>
+        </article>
+
+        <article class="menu-item bg-white rounded-xl shadow-sm p-4 flex flex-col hover:shadow-md transition" data-category="pastry">
+          <img src="https://images.pexels.com/photos/7966014/pexels-photo-7966014.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Croissant" class="w-full h-40 object-cover rounded-md mb-3">
+          <div class="flex items-start justify-between">
+            <div>
+              <h4 class="font-semibold text-coffee-700">Butter Croissant</h4>
+              <p class="text-xs text-gray-500">Flaky, buttery, baked fresh daily.</p>
+            </div>
+            <div class="text-coffee-700 font-semibold">$3.75</div>
+          </div>
+          <div class="mt-3 flex items-center justify-between">
+            <button class="addBtn px-3 py-1 rounded-md bg-accent text-coffee-700 text-sm shadow hover:scale-105 transition" data-name="Butter Croissant" data-price="3.75">Add</button>
+            <div class="text-xs text-gray-500">1pc</div>
+          </div>
+        </article>
+
+        <article class="menu-item bg-white rounded-xl shadow-sm p-4 flex flex-col hover:shadow-md transition" data-category="pastry">
+          <img src="https://pixabay.com/get/ge2a4e9947512ecf60e2c4320fe5f95897fe2a9f4aa92a58e18f6f33da3644a772dbf8fe2379f535d5c8614586edc4916_640.jpg" alt="Cinnamon Roll" class="w-full h-40 object-cover rounded-md mb-3">
+          <div class="flex items-start justify-between">
+            <div>
+              <h4 class="font-semibold text-coffee-700">Cinnamon Roll</h4>
+              <p class="text-xs text-gray-500">Sticky, sweet, perfect with coffee.</p>
+            </div>
+            <div class="text-coffee-700 font-semibold">$4.25</div>
+          </div>
+          <div class="mt-3 flex items-center justify-between">
+            <button class="addBtn px-3 py-1 rounded-md bg-accent text-coffee-700 text-sm shadow hover:scale-105 transition" data-name="Cinnamon Roll" data-price="4.25">Add</button>
+            <div class="text-xs text-gray-500">1pc</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="w-full max-w-none px-6 md:px-24 py-10">
+      <h3 class="text-xl font-display text-coffee-700">Gallery</h3>
+      <div class="mt-4 w-full overflow-x-auto py-4 flex gap-4">
+        <img src="https://images.unsplash.com/photo-1503240700317-f9df07c1e79f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw1fHxiYXJpc3RhJTIwbWFraW5nJTIwbGF0dGUlMjBhcnQlMjBmcm9tJTIwc2lkZSUyMGFuZ2xlfGVufDB8MHx8fDE3NTUxMDc0ODR8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="latte art" class="h-44 w-64 object-cover rounded-lg flex-shrink-0 hover:scale-105 transform transition" />
+        <img src="https://pixabay.com/get/ga680981acb70477905b6d1441f3ff6de960b40157434a3189a1bed2e5e173a2a5e85af2d353500d2da3f0b83411e7364f73b5f6122b63c313f2be0694b023304_640.jpg" alt="merch" class="h-44 w-64 object-cover rounded-lg flex-shrink-0 hover:scale-105 transform transition" />
+        <img src="https://images.pexels.com/photos/6774439/pexels-photo-6774439.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="community" class="h-44 w-64 object-cover rounded-lg flex-shrink-0 hover:scale-105 transform transition" />
+        <img src="https://pixabay.com/get/gb3f5fb3b3a58d81ad309e1b41cb78d2f7a2db1d06918e1b047884aa5f2026b3d76bb2504c991194baa6f3a9a05c59be2a09583ccad96a0a0bdd04d31d8624e1a_640.jpg" alt="pour over" class="h-44 w-64 object-cover rounded-lg flex-shrink-0 hover:scale-105 transform transition" />
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="w-full max-w-none px-6 md:px-24 py-10">
+      <div class="w-full rounded-xl bg-gradient-to-r from-coffee-700 to-accent text-white p-6 md:p-10 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div>
+          <h4 class="text-xl font-display">Join our newsletter</h4>
+          <p class="text-sm opacity-90 mt-1">Get new roast drops, events, and exclusive discounts.</p>
+        </div>
+        <form id="newsletterForm" class="w-full md:w-auto flex gap-2">
+          <input type="email" name="email" required placeholder="you@domain.com" class="px-4 py-2 rounded-md text-gray-800" />
+          <button type="submit" class="px-4 py-2 rounded-md bg-white text-coffee-700 font-semibold hover:opacity-90 transition">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- CART MODAL -->
+  <div id="cartModal" class="fixed inset-0 z-50 hidden">
+    <div class="absolute inset-0 bg-black/50" id="cartOverlay"></div>
+    <aside class="absolute right-0 top-0 h-full w-full md:w-96 bg-white shadow-xl p-6 overflow-y-auto">
+      <div class="flex items-center justify-between">
+        <h3 class="text-lg font-semibold text-coffee-700">Your Order</h3>
+        <button id="closeCart" class="p-2 rounded-md hover:bg-gray-100">
+          <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+      </div>
+
+      <div id="cartItems" class="mt-4 space-y-4">
+        <p class="text-sm text-gray-500">Your cart is empty.</p>
+      </div>
+
+      <div class="mt-6 border-t pt-4">
+        <div class="flex items-center justify-between text-sm text-gray-700">
+          <div>Subtotal</div>
+          <div id="cartSubtotal">$0.00</div>
+        </div>
+        <div class="mt-4 flex gap-3">
+          <button id="checkoutBtn" class="flex-1 px-4 py-2 rounded-md bg-coffee-700 text-white hover:bg-coffee-500 transition">Checkout</button>
+          <button id="clearCart" class="px-4 py-2 rounded-md border hover:bg-gray-50">Clear</button>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="w-full max-w-none bg-white border-t mt-10">
+    <div class="w-full max-w-none px-6 md:px-24 py-8 flex flex-col md:flex-row items-start justify-between gap-6">
+      <div class="w-full md:w-1/3">
+        <h4 class="font-semibold text-coffee-700">Wild Bean Coffee</h4>
+        <p class="text-sm text-gray-600 mt-2">123 Roaster Lane — Your City, ST<br>Open daily 7am – 6pm</p>
+      </div>
+
+      <div class="w-full md:w-1/3">
+        <h5 class="font-semibold">Quick Links</h5>
+        <div class="mt-2 text-sm">
+          <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="block py-1">Home</a>
+          <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" class="block py-1">About</a>
+          <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="block py-1">Contact</a>
+        </div>
+      </div>
+
+      <div class="w-full md:w-1/3">
+        <h5 class="font-semibold">Follow</h5>
+        <div class="mt-2 flex gap-3">
+          <a class="text-gray-600 hover:text-coffee-700">Instagram</a>
+          <a class="text-gray-600 hover:text-coffee-700">Facebook</a>
+          <a class="text-gray-600 hover:text-coffee-700">Twitter</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
