@@ -1,0 +1,96 @@
+<!--  -->
+<!--  -->
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:300,400,500,600,700&family=Playfair+Display:300,400,500,600,700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Wild Bean Coffee</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: {'coffee-700': '#4b2e2a', 'accent':'#DAB68A'}, fontFamily: { sans: ['Poppins', 'ui-sans-serif', 'system-ui'], display: ['Playfair Display', 'serif'] } } }
+    }
+  </script>
+</head>
+<body style="font-family: 'Poppins', sans-serif;" class="w-full max-w-none bg-gray-50 text-gray-800" style="font-family:'Poppins', sans-serif;">
+  <header class="w-full bg-white shadow-sm">
+    <div class="w-full flex items-center justify-between px-6 py-4">
+      <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-coffee-700 flex items-center justify-center text-white text-lg font-bold">W</div>
+        <div class="leading-tight">
+          <div class="text-sm font-semibold text-coffee-700">Wild Bean</div>
+          <div class="text-xs text-gray-500 -mt-0.5">Coffee & Roastery</div>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="hover:text-coffee-500">Home</a>
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" class="hover:text-coffee-500">About</a>
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="text-coffee-700">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="w-full max-w-none px-6 md:px-24 py-10">
+    <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="md:col-span-2 bg-white p-6 rounded-xl shadow-sm">
+        <h1 class="text-2xl font-display text-coffee-700">Get in touch</h1>
+        <p class="text-sm text-gray-600 mt-2">Questions, catering requests, or feedback — we want to hear from you.</p>
+
+        <form id="contactForm" class="mt-6 space-y-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <input name="name" type="text" placeholder="Your name" required class="px-4 py-2 rounded-md border" />
+            <input name="email" type="email" placeholder="Email" required class="px-4 py-2 rounded-md border" />
+          </div>
+          <input name="subject" type="text" placeholder="Subject" class="px-4 py-2 rounded-md border w-full" />
+          <textarea name="message" rows="6" placeholder="Message" required class="px-4 py-3 rounded-md border w-full"></textarea>
+          <div class="flex items-center gap-3">
+            <button type="submit" class="px-4 py-2 rounded-md bg-coffee-700 text-white hover:bg-coffee-500 transition">Send Message</button>
+            <div id="contactStatus" class="text-sm text-gray-600"></div>
+          </div>
+        </form>
+      </div>
+
+      <aside class="bg-white p-6 rounded-xl shadow-sm">
+        <h3 class="font-semibold text-coffee-700">Visit Us</h3>
+        <p class="text-sm text-gray-600 mt-2">Wild Bean Coffee<br>123 Roaster Lane<br>Your City, ST 00000</p>
+
+        <div class="mt-4">
+          <h4 class="font-semibold">Hours</h4>
+          <p class="text-sm text-gray-600 mt-1">Mon–Fri: 7am – 6pm<br>Sat–Sun: 8am – 5pm</p>
+        </div>
+
+        <div class="mt-4">
+          <h4 class="font-semibold">Phone</h4>
+          <p class="text-sm text-gray-600 mt-1">(555) 123-4567</p>
+        </div>
+
+        <div class="mt-4">
+          <h4 class="font-semibold">Find us</h4>
+          <img src="https://images.unsplash.com/photo-1461183479101-6c14cd5299c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw3fHxtYXAlMjBwaW5wb2ludCUyMHNob3dpbmclMjBhJTIwY29mZmVlJTIwc2hvcCUyMGxvY2F0aW9uJTIwb24lMjBtYXB8ZW58MHwwfHx8MTc1NTEwNzQ4OHww&ixlib=rb-4.1.0&q=80&w=1080" alt="map" class="w-full h-36 object-cover rounded-md mt-2" />
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="w-full max-w-none bg-white border-t py-6 px-6 md:px-24">
+    <div class="flex flex-col md:flex-row items-start justify-between gap-4">
+      <div>
+        <h5 class="font-semibold">Wild Bean Coffee</h5>
+        <p class="text-sm text-gray-500">123 Roaster Lane — Your City</p>
+      </div>
+      <div class="text-sm">
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="block">Home</a>
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" class="block">About</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
